@@ -1,0 +1,313 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+$color-red: #EF3E42;
+$color-blue: #332982;
+$color-gray: #777;
+
+$font-family-primary: 'Open Sans', sans-serif;
+$font-family-secondary: 'Open Sans Condensed', sans-serif;
+
+$font-size-h1: 60px;
+$font-family-h1: $font-family-primary;
+$font-weight-h1: 300;
+
+$font-size-h2: 20px;
+$font-family-h2: $font-family-secondary;
+$font-weight-h2: bold;
+
+* {
+    font-family: $font-family-secondary;
+}
+
+
+
+#logo-link {
+    padding-left: .5vw;
+    font-stretch: condensed;
+    color: white;
+    font-size: 2rem;
+
+}
+
+#header {
+    background-color: $color-red;
+}
+
+.nav-link {
+    color: white;
+    padding-top: 1.2rem;
+    font-weight: bolder;
+    font-stretch: condensed;
+    font-family: $font-size-h1;
+}
+
+#header {
+    background-color: $color-red;
+    color: white;
+    padding-left: 10%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;  
+}
+
+#adopt-now-section {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#adopt-now-btn {
+    border: solid .1rem white;
+    border-radius: 0;
+    color: white;
+    width: 15%;
+    text-align: left;
+    font-weight: bold;
+}
+
+#adopt-now-content {
+    padding-left: 10%;
+    padding-bottom: 0;
+    color: white;
+    font-stretch: extra-condensed;
+    font-weight: lighter;
+}
+
+#inset-body {
+    padding-top: 1.5rem;
+    padding-left: 10%;
+    padding-right: 7%;
+}
+
+#volunteers-card {
+    padding: 0;
+}
+
+#volunteers-header {
+    background-color: $color-blue;
+    color: white;
+    font-weight: bold;
+}
+
+#volunteer-img {
+    width: 100%;
+    height: auto;
+}
+
+#volunteers-text {
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 3.5rem;
+    color: $color-gray;
+}
+
+#join-us-btn {
+    border: solid $color-blue .2rem;
+    border-radius: 0;
+    color: $color-blue;
+    padding: .3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.card-body {
+    padding: 0;
+}
+
+#testimonial-card {
+    padding: 0;
+}
+
+#testimonial-header {
+    background-color: $color-red;
+    color: white;
+    font-weight: bold;
+}
+
+#testimonial-img {
+    width: 100%;
+    height: auto;
+}
+
+#testimonial-text {
+    padding-top: 5rem;
+    padding-left: 3rem;
+    color: white;
+}
+
+#program-company-selection {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#programs-tab {
+    color: $color-blue;
+}
+
+#companies-tab {
+    color: $color-gray;
+}
+
+#behavior-row {
+    margin-bottom: 1rem;
+}
+
+#behavior-program {
+    color: $color-red;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#behavior-text {
+    color: $color-gray;
+    font-family: $font-family-h2;
+    font-size: .85rem;
+}
+
+#read-more-behavior-btn {
+    border: solid $color-red .2rem;
+    border-radius: 0;
+    color: $color-red;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    padding-left: 1.4rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+}
+
+#family-row {
+    padding-bottom: 1rem;
+}
+
+#family-img {
+    object-fit: cover;
+}
+
+#my-next-family {
+    color: $color-red;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#family-text {
+    color: $color-gray;
+    font-family: $font-family-h2;
+    font-size: .85rem;
+}
+
+#read-more-family-btn {
+    border: solid $color-red .2rem;
+    border-radius: 0;
+    color: $color-red;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    padding-left: 1.4rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+}   
+
+#brewdog-row {
+    margin-bottom: 1rem;
+}
+
+#dog-days {
+    color: $color-red;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#brewdog-text {
+    color: $color-gray;
+    font-family: $font-family-h2;
+    font-size: .85rem;
+}
+
+#read-more-brewdog-btn {
+    border: solid $color-red .2rem;
+    border-radius: 0;
+    color: $color-red;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    padding-left: 1.4rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+}
+
+#rescue-brew-row {
+    padding-bottom: 1rem;
+}
+
+#rescue-brew-img {
+    object-fit: cover;
+}
+
+#rescue-brew-title {
+    color: $color-red;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#rescue-text {
+    color: $color-gray;
+    font-family: $font-family-h2;
+    font-size: .85rem;
+}
+
+#read-more-rescue-btn {
+    border: solid $color-red .2rem;
+    border-radius: 0;
+    color: $color-red;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    padding-left: 1.4rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+}
+
+#adopt-me-dog {
+    width: 100%;
+    height: auto;
+    padding-top: 10rem;
+}
+
+#footer {
+    border-top: solid $color-red .3rem;
+    background-color: $color-blue;
+    color: white;
+    padding-left: 10%;
+    padding-right: 7%;
+    margin-top: 2rem;
+}
+
+#footer-content {
+    padding: 0;
+}
+
+#footer-branding {
+    padding-top: 3rem;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+#footer-menu {
+    padding-right: 15rem;
+}
+
+.address {
+    margin: 0;
+}
+
+#credits {
+    font-size: .7rem;
+    margin-top: 7rem;
+    padding-bottom: 5rem;
+}

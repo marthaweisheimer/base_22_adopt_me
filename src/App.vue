@@ -1,28 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container-fluid row" id="header">
+      <adopt-me-branding class="col-sm-3"/>
+      <div class="col-sm-4" />
+      <Menu class="col-sm-5" id="header-menu" />
+    </div>
+    <div>
+      <router-view class="content" />
+    </div>
+    <div class="container-fluid" id="footer">
+      <Footer class="footer-menu"></Footer>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AdoptMeBranding from './components/AdoptMeBranding.vue'
+import Footer from './components/Footer.vue'
+import Menu from './components/Menu.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AdoptMeBranding,
+    Footer,
+    Menu
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import "./assets/scss/style.scss";
 </style>
