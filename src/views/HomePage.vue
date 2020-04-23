@@ -1,10 +1,12 @@
 <template>
   <div class="home">
     <div class="container-fluid" id="adopt-now-section">
-          <img class="img-fluid" src='../assets/img/dogs.jpg' alt="Three young dogs"/>
+          <img class="img-fluid" id="adopt-img" src='../assets/img/dogs.jpg' alt="Three young dogs"/>
           <div class="card-img-overlay h-100 d-flex flex-column justify-content-end" id="adopt-now-content">
-            <h1 class="display-5">This is your new family!</h1>
-            <a href="#" class="btn" id="adopt-now-btn">ADOPT NOW</a>
+            <div id="adopt-now-stripe">
+              <h1 class="display-4">This is your new family!</h1>
+              <a href="#" class="btn" id="adopt-now-btn">ADOPT NOW</a>
+            </div>
           </div>
  
     </div>
@@ -32,7 +34,7 @@
             </div> 
           </div>
         </div>
-        <div class="container col-sm-4">
+        <div class="container col-sm-4 align-bottom" id="adopt-me-dog-container">
           <img id="adopt-me-dog" src="../assets/img/adopt-me.jpg" alt="Dog in adopt me vest." />
         </div>
       </div>

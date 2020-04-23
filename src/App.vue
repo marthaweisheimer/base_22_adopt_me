@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <div class="container-fluid row" id="header">
-      <adopt-me-branding class="col-sm-3"/>
-      <div class="col-sm-4" />
-      <Menu class="col-sm-5" id="header-menu" />
+      <adopt-me-branding class="col-7"/>
+      <Menu class="col-5" id="header-menu" />
     </div>
     <div>
       <router-view class="content" />

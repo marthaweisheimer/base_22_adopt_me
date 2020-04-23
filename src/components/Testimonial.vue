@@ -5,7 +5,6 @@
             <img class="img-fluid" id="testimonial-img" src="../assets/img/testimonial.jpg" alt="Woman playing fetch with dog" />
             <div class="card-img-overlay" id="testimonial-text">
                 <p>Mangi, my best friend who saved my life</p>
-                <p>Make a video link</p>
             </div>
         </div>
     </div>

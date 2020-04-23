@@ -19,19 +19,14 @@ $font-weight-h2: bold;
     font-family: $font-family-secondary;
 }
 
-
-
 #logo-link {
     padding-left: .5vw;
     font-stretch: condensed;
     color: white;
     font-size: 2rem;
-
 }
 
-#header {
-    background-color: $color-red;
-}
+//-----------------------------------HEADER----------------------------------
 
 .nav-link {
     color: white;
@@ -47,31 +42,80 @@ $font-weight-h2: bold;
     padding-left: 10%;
     padding-right: 7%;
     padding-top: 1%;
-    padding-bottom: 1%;  
+    padding-bottom: 1%;
+    margin: 0;  
 }
 
+#header-menu {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0;
+}
+
+@media (max-width: 1210px) {
+    #header-menu.nav {
+        flex-direction: column;
+    }
+}
+
+//-----------------------------------ADOPT NOW----------------------------------
+
 #adopt-now-section {
+    position: relative;
     width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
 }
 
+#adopt-img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: 33%;
+}
+
 #adopt-now-btn {
     border: solid .1rem white;
     border-radius: 0;
     color: white;
-    width: 15%;
+    width: 50%;
     text-align: left;
     font-weight: bold;
 }
 
 #adopt-now-content {
-    padding-left: 10%;
-    padding-bottom: 0;
     color: white;
     font-stretch: extra-condensed;
     font-weight: lighter;
+    padding: 0;
+}
+
+#adopt-now-stripe {
+    background-color: rgba(0,0,0,.4);
+    padding-left: 10%;
+    padding-right: 7%;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 760px){
+    #adopt-now-btn {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1020px){
+    #adopt-now-btn {
+        width: 15%;
+    }
+
+    #adopt-img {
+        height: 40rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: 20% 60%;
+    }
 }
 
 #inset-body {
@@ -80,8 +124,11 @@ $font-weight-h2: bold;
     padding-right: 7%;
 }
 
+//-----------------------------------VOLUNTEER----------------------------------
+
 #volunteers-card {
     padding: 0;
+    margin-bottom: 1rem;
 }
 
 #volunteers-header {
@@ -96,10 +143,11 @@ $font-weight-h2: bold;
 }
 
 #volunteers-text {
-    padding-top: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 3.5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: $color-gray;
+    font-size: .95rem;
 }
 
 #join-us-btn {
@@ -110,15 +158,39 @@ $font-weight-h2: bold;
     padding-left: 1rem;
     padding-right: 1rem;
     font-weight: bolder;
-    margin-top: 1rem;
+    margin-top: .5rem;
+}
+
+@media (min-width: 1210px) {
+    #volunteers-text {
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 3.5rem;
+        font-size: 1rem;
+    }
+
+    #join-us-btn {
+        margin-top: 1rem;
+    }
 }
 
 .card-body {
     padding: 0;
 }
 
+//-----------------------------------TESTIMONIAL----------------------------------
+
 #testimonial-card {
     padding: 0;
+    padding-left: 1.5rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 575px) {
+    #testimonial-card {
+        padding: 0;
+    }
 }
 
 #testimonial-header {
@@ -138,23 +210,40 @@ $font-weight-h2: bold;
     color: white;
 }
 
+//-----------------------------------TABS----------------------------------
+
 #program-company-selection {
-    padding-top: 4rem;
+    padding-top: 1rem;
     padding-bottom: 4rem;
     padding-right: 0;
     padding-left: 0;
 }
 
-#programs-tab {
+@media (min-width: 760px) {
+    #program-company-selection {
+        padding-top: 4rem;
+    }
+}
+
+.nav-tabs .nav-link.active {
     color: $color-blue;
 }
 
-#companies-tab {
+.nav-tabs .nav-link {
     color: $color-gray;
 }
 
+//---------------------------BEHAVIOR PROGRAM--------
+
 #behavior-row {
     margin-bottom: 1rem;
+}
+
+#behavior-img {
+    height: 12rem;
+    width: 12rem;
+    object-fit: cover;
+    object-position: 20% 50%;
 }
 
 #behavior-program {
@@ -181,12 +270,17 @@ $font-weight-h2: bold;
     margin-top: 1rem;
 }
 
+//---------------------------FAMILY PROGRAM--------
+
 #family-row {
     padding-bottom: 1rem;
 }
 
 #family-img {
+    height: 12rem;
+    width: 12rem;
     object-fit: cover;
+    object-position: 20% 50%;
 }
 
 #my-next-family {
@@ -211,7 +305,9 @@ $font-weight-h2: bold;
     padding-left: 1.4rem;
     padding-right: 2rem;
     margin-top: 1rem;
-}   
+}
+
+//---------------------------BREWDOG COMPANY--------
 
 #brewdog-row {
     margin-bottom: 1rem;
@@ -240,6 +336,8 @@ $font-weight-h2: bold;
     padding-right: 2rem;
     margin-top: 1rem;
 }
+
+//---------------------------RESCUE BREW COMPANY--------
 
 #rescue-brew-row {
     padding-bottom: 1rem;
@@ -276,8 +374,27 @@ $font-weight-h2: bold;
 #adopt-me-dog {
     width: 100%;
     height: auto;
-    padding-top: 10rem;
 }
+
+@media (min-width: 760px) {
+    #adopt-me-dog {
+        width: 100%;
+        height: auto;
+        padding-top: 15rem;
+    }
+}
+
+@media (min-width: 1020px) {
+
+    #adopt-me-dog {
+        width: 100%;
+        height: auto;
+        padding-top: 10rem;
+    }
+
+}
+
+//-----------------------------------FOOTER----------------------------------
 
 #footer {
     border-top: solid $color-red .3rem;
@@ -299,7 +416,7 @@ $font-weight-h2: bold;
 }
 
 #footer-menu {
-    padding-right: 15rem;
+    padding-right: 1rem;
 }
 
 .address {
@@ -308,6 +425,26 @@ $font-weight-h2: bold;
 
 #credits {
     font-size: .7rem;
-    margin-top: 7rem;
-    padding-bottom: 5rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 760px) {
+    #footer-menu.nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1020px) {
+
+    #footer-menu {
+        padding-right: 15rem;
+    }
+
+    #credits {
+        margin-top: 7rem;
+        padding-bottom: 5rem;
+    }
+
 }

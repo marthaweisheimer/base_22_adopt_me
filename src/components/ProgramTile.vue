@@ -2,7 +2,7 @@
     <div>
         <div class="container">
             <div class="row" id="behavior-row">
-                <img class="img col-sm-4" src="../assets/img/friend-in-trouble.png" alt="Dog peeking out of dog house" />
+                <img class="img col-sm-4" id="behavior-img" src="../assets/img/friend-in-trouble.png" alt="Dog peeking out of dog house" />
                 <div class="col-sm-8" id="behavior-text">
                     <h6 id="behavior-program">BEHAVIOR PROGRAM</h6>
                     <p>Evaluation of each dog using specialists who determine the best training that will help your friend be a better family member.</p>
